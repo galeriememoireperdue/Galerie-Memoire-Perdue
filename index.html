@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
   <title>Mémoire perdue</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="siteweb.css"/>
 </head>
+
 <body>
-
-<!-- HEADER -->
 	
-  <header>
-    <img src="" alt=""/>
+  <header> <!-- Header -->
+    <section id="accueil">
+        <img src="" alt=""/>
+
+        <nav> <!-- Barre de navigation -->
+        <ul>
+            <li>Mémoire perdue</li>
+            <li><a href="#accueil">ACCUEIL</a></li>
+            <li><a href="#presentation">PRÉSENTATION</a></li>
+            <li><a href="#galerie">GALERIE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <img src="images/logo_galerie.png" alt="Logo"/>
+        </ul>
+        </nav>
+    </section>
+
   </header>
-  <nav>
-    <ul>
-    <li>Mémoire perdue</li>
-    <li><a href="#">ACCUEIL</a></li>
-    <li><a href="#">PRÉSENTATION</a></li>
-    <li><a href="#">GALERIE</a></li>
-    <li><a href="#">CONTACT</a></li>
-    <img src="" alt="LOGO"/>
-    </ul>
-  </nav>
 
- <!-- PAGE -->
-	
-  <div class="presentation">
+  <section id="presentation"> <!-- Section présentation de la galerie -->
 	  <h1>Présentation</h1>
-  </div>
-  <div class="galerie">
-	  <h1>Galerie</h1>
-  <div class="artistes">
-	  	<h2>Les artistes</h2>
-	    <p>Des artistes visionnaires unis par la passion et l'excellence photographique.</p>
-	<img src="" alt="">
-	<img src="" alt="">
-  </div>
-  <div class="oeuvres">
-	    <h2>Les oeuvres</h2>
-	<img src="" alt="">
-	<img src="" alt="">
-	<img src="" alt="">
-	<img src="" alt="">
-  </div>
-  </div>
 
-<!-- FOOTER -->
+    <div> <!-- Présentation globale -->
+      <img src="images/galerie_1.jpg" alt="">
+      <h2>L'art du regard</h2>
+      <a>La Galerie Mémoire perdue dévoile la beauté du monde à travers la photographie, un espace où chaque image invite à contempler, ressentir et réfléchir.</a>
+      <a href="#galerie"><input type="button" value="Galerie"></a>
+    </div>
+
+    <div class="engagement"> <!-- Engagement de la galerie -->
+      <div class="bloc_texte">
+        <h2>Une exigence au service de la création</h2>
+        <p>La Galerie Mémoire perdue s’engage à valoriser la photographie comme un art du regard et du temps. Elle accompagne les artistes avec exigence et sincérité, offrant au public des œuvres qui éveillent la sensibilité et nourrissent la réflexion, dans un dialogue constant entre esthétique et émotion.</p>
+      </div>
+
+      <!-- Valeurs de la galerie -->
+      <div class="valeur">
+        <img scr="images/valeur_1.jpg">
+        <div class="bloc_texte">
+          <h2>L’expression du vrai</h2>
+          <p>Vérité du regard, sincérité de l’instant.</p>
+        </div>
+      </div>
+
+      <div class="valeur">
+        <img scr="images/valeur_2.jpg">
+        <div class="bloc_texte">
+          <h2>L’exigence du beau</h2>
+          <p>Exigence artistique, maîtrise et justesse.</p>
+        </div>
+      </div>
+
+      <div class="valeur">
+        <img scr="images/valeur_3.jpg">
+        <div class="valeur">
+          <h2>Le lien par l’art</h2>
+          <p>Dialogue ouvert entre art et public.</p>
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+
+  <section id="galerie"> <!-- Section galerie -->
+	  <h1>Galerie</h1>
+
+    <!-- Artistes -->
+    <div class="artistes">
+	    <h2>Les artistes</h2>
+	    <p>Des artistes visionnaires unis par la passion et l'excellence photographique.</p>
+    </div>
+
+    <!-- Oeuvres -->
+    <div class="oeuvres">
+	    <h2>Les oeuvres</h2>
+	    <img src="images/oeuvre_1.jpg" alt="">
+	    <img src="images/oeuvre_2.jpg" alt="">
+	    <img src="images/oeuvre_3.jpg" alt="">
+	    <img src="images/oeuvre_4.jpg" alt="">
+    </div>
+  </section>
 	
-  <footer>
-	<div class="coordonnees">
-		<h2>Paul Dechewsky</h2>
-		<p>
+  <footer> <!-- Footer -->
+
+	  <section id="coordonnees"> <!-- Coordonées -->
+		  <h2>Paul Dechewsky</h2>
+		  <p>
 			10 Rue de la République,75000 Paris <br> Tel : 01.63.45.85.56 <br> Fax : 01.63.45.85.56 <br> Email : galerie.memoire.perdue@gmail.com
-		</p>
-	</div>
-	<div class="reseauxsociaux">
-		<a href=""><img src="" alt="Instagram"/></a>
-		<a href=""><img src="" alt="Facebook"/></a>
-		<a href=""><img src="" alt="Pinterest"/></a>
-		<a href=""><img src="" alt="LinkedIn"/></a>
-	</div>
-    <form class="form">
+		  </p>
+
+	    <div id="reseauxsociaux"> <!-- Réseaux sociaux -->
+		    <a href=""><img src="images/logo_insta.png" alt="Instagram"/></a>
+		    <a href=""><img src="images/logo_facebook.png" alt="Facebook"/></a>
+		    <a href=""><img src="images/logo_pinterest.png" alt="Pinterest"/></a>
+		    <a href=""><img src="images/logo_linkedin.png" alt="LinkedIn"/></a>
+	    </div>
+
+    </section>
+
+    <form id="contact"> <!-- Formulaire-->
       <fieldset>
           <legend id="title">FORMULAIRE DE CONTACT</legend>
           <p>Nom</br><input type="text" name="name" id="nom" placeholder="Nom" required></p> 
           <p>Mail</br><input type="mail" name="mail" id="mail" placeholder="Mail" required></p>
       </fieldset>
     </form>
+
   </footer>
+
 </body>
+
 </html>
