@@ -19,6 +19,96 @@ html{
     color: #f6cacc;
 }
 
+/* CAROUSEL DES ARTISTES */
+
+.carousel{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.banque_carousel{
+    display: flex;
+    justify-content: space-around; 
+    width: 50%;
+    transition : transform 0.6s ease;
+}
+
+.photo_carousel{
+    width: 20% ;
+    text-align: center;
+}
+
+.photo_carousel img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+    /*Positions du carousel*/
+
+input[type="radio"] {
+    display: none;
+}
+
+#position_1:checked ~ .banque_carousel {
+    transform: translateX(0);
+}
+
+#position_2:checked ~ .banque_carousel {
+    transform: translateX(-20%);
+}
+
+#position_2:checked ~ .banque_carousel {
+    transform: translateX(-40%);
+}
+
+    /*Boutons de navigation*/
+
+.navigation .fleche {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+    background: red;
+}
+
+.fleche .gauche {left: 8px;}
+.fleche .droite {right: 8px;}
+
+.navigation .gauche::after {
+    content: "<";
+    display: inline-block;
+}
+
+.navigation .droite::after {
+    content: ">";
+    display: inline-block;
+}
+
+    /*Affichage du carousel*/
+
+.navigation .fleche {display: none;}
+
+#position_1:checked ~ .navigation .d1 {display: block;}
+
+#position_2:checked ~ .navigation .g2,
+#position_2:checked ~ .navigation .d2 {display: block;}
+
+#position_3:checked ~ .navigation .g3 {display: block;}
+
+.navigation .fleche:focus {
+    outline: 2px solide #333;
+    outline-offset: 2px;
+}
+
+
 /* OEUVRES */
 
 #oeuvres{
@@ -39,7 +129,7 @@ html{
 .portrait{
     border-radius: 30px;
     max-width: 30%;
-    max-height: auto%;
+    max-height: auto;
     object-fit: contain
 }
 
