@@ -46,21 +46,36 @@ html{
 }
 
     /*Positions du carousel*/
-
-input[type="radio"] {
-    display: none;
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
-#position_1:checked ~ .banque_carousel {
-    transform: translateX(0);
+.banque_carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
 }
 
-#position_2:checked ~ .banque_carousel {
-    transform: translateX(-20%);
+.photo_carousel {
+    width: 150px;
+    text-align: center;
 }
 
-#position_2:checked ~ .banque_carousel {
-    transform: translateX(-40%);
+.photo_carousel img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo_carousel p {
+    margin: 10px 0 0;
+    color: #fff;
+    font-size: 14px;
 }
 
     /*Boutons de navigation*/
