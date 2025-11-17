@@ -154,3 +154,15 @@ html{
     max-height: auto;
     object-fit: contain
 }
+#accueil {
+    display: flex;               /* aligne les images côte à côte */
+    justify-content: center;     /* centre le tout */
+    gap: 20px;                   /* espace entre les images */
+}
+
+#accueil img {
+    width: 40%;                  /* taille moyenne */
+    height: auto;                /* garde les proportions */
+    object-fit: cover;           /* optionnel */
+    border-radius: 10px;         /* optionnel : joli */
+}
