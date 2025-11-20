@@ -31,42 +31,56 @@
   <section id="presentation"> <!-- Section présentation de la galerie -->
 	  <h1 class="titre">Présentation</h1>
 
-    <div> <!-- Présentation globale -->
-      <img src="images/galerie_1.jpg" alt="Galerie">
-      <h2 class="titre">L'art du regard</h2>
-      <a class="texte">La Galerie Mémoire perdue dévoile la beauté du monde à travers la photographie, un espace où chaque image invite à contempler, ressentir et réfléchir.</a>
-      <a href="#galerie" class="titre"><input type="button" value="Galerie"></a>
+    <!-- Présentation globale -->
+    <div class="presentation_globale"> 
+      
+      <!-- Photo galerie-->
+      <img src="images/galerie_1.jpg" alt="Galerie" class="photo_globale">
+
+      <div class="texte_globale">
+        <h2 class="titre">L'art du regard</h2>
+        <a class="texte">La Galerie Mémoire perdue dévoile la beauté du monde à travers la photographie, un espace où chaque image invite à contempler, ressentir et réfléchir.</a>
+        <a href="#galerie" class="titre"><input type="button" value="Galerie"></a>
+      </div>
+    
     </div>
 
-    <div class="engagement"> <!-- Engagement de la galerie -->
-      <div class="bloc_texte">
-        <h2 class="titre">Une exigence au service de la création</h2>
-        <p class="texte">La Galerie Mémoire perdue s’engage à valoriser la photographie comme un art du regard et du temps. Elle accompagne les artistes avec exigence et sincérité, offrant au public des œuvres qui éveillent la sensibilité et nourrissent la réflexion, dans un dialogue constant entre esthétique et émotion.</p>
+    <div class="presentation_engagements"> <!-- Engagement de la galerie -->
+      <div class="texte_engagements">
+        <h2 class="titre" Align=Center>Une exigence au service de la création</h2>
+        <p class="texte" Align=Center>La Galerie Mémoire perdue s’engage à valoriser la photographie comme un art du regard et du temps. Elle accompagne les artistes avec exigence et sincérité, offrant au public des œuvres qui éveillent la sensibilité et nourrissent la réflexion, dans un dialogue constant entre esthétique et émotion.</p>
       </div>
 
       <!-- Valeurs de la galerie -->
-      <div class="valeur">
-        <img src="images/valeur_1.jpg" alt="L'expression du vrai">
-        <div class="bloc_texte">
-          <h2 class="titre">L’expression du vrai</h2>
-          <p class="texte">Vérité du regard, sincérité de l’instant.</p>
-        </div>
-      </div>
+      <div class="presentation_valeurs">
 
-      <div class="valeur">
-        <img src="images/valeur_2.jpg" alt="L'exigence du beau">
-        <div class="bloc_texte">
-          <h2 class="titre">L’exigence du beau</h2>
-          <p class="texte">Exigence artistique, maîtrise et justesse.</p>
+        <!-- Valeur 1 -->
+        <div class="valeurs">
+          <img src="images/valeur_1.jpg" alt="L'expression du vrai" class="photo_valeurs">
+          <div class="texte_valeurs">
+            <h2 class="titre" Align=Center>L’expression du vrai</h2>
+            <p class="texte" Align=Center>Vérité du regard,<br>sincérité de l’instant.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="valeur">
-        <img src="images/valeur_3.jpg" alt="Le lien par l'art">
-        <div class="valeur">
-          <h2 class="titre">Le lien par l’art</h2>
-          <p class="texte">Dialogue ouvert entre art et public.</p>
+        <!-- Valeur 2 -->
+        <div class="valeurs">
+          <img src="images/valeur_2.jpg" alt="L'exigence du beau" class="photo_valeurs">
+          <div class="texte_valeurs">
+            <h2 class="titre" Align=Center>L’exigence du beau</h2>
+            <p class="texte" Align=Center>Exigence artistique, maîtrise et justesse.</p>
+          </div>
         </div>
+
+        <!-- Valeur 3 -->
+        <div class="valeurs">
+          <img src="images/valeur_3.jpg" alt="Le lien par l'art" class="photo_valeurs">
+          <div class="texte_valeurs">
+            <h2 class="titre" Align=Center>Le lien par l’art</h2>
+            <p class="texte" Align=Center>Dialogue ouvert entre art et public.</p>
+          </div>
+        </div>
+
       </div>
     
     </div>
@@ -79,44 +93,65 @@
     <!-- Artistes -->
     <div class="artistes">
 	    <h2 class="titre">Les artistes</h2>
-
-      <div class="carousel">
-
-        <!-- Positions du carousel -->
-        <input type="radio" name="position" id="position_1" checked>
-        <input type="radio" name="position" id="position_2">
-        <input type="radio" name="position" id="position_3">
-
-        <!-- Banque de photo du carousel -->
-        <div class="banque_carousel">
-            <div class="photo_carousel"><img src="images/Mohammed_photographe.jpg" alt=""><p class="titre">Mohammed Ibrahim</p></div>
-            <div class="photo_carousel"><img src="images/Ayanfe_photographe.jpg" alt=""><p class="titre">Ayanfe Olarinde</p></div>
-            <div class="photo_carousel"><img src="images/Salah_photographe.jpg" alt=""><p class="titre">Salah Darwish</p></div>
-            <div class="photo_carousel"><img src="images/Pedro_photographe.jpg" alt=""><p class="titre">Pedro Ferreira</p></div>
-            <div class="photo_carousel"><img src="images/Mathieu_photographe.jpg" alt=""><p class="titre">Mathieu Bonnet</p></div>
-        </div>
-
-        <!-- Flèches de navigation -->
-        <div class="navigation">
-
-          <!-- Position #1 -->
-          <label class="fleche gauche g1" for="position_1" aria-hidden="true"></label>
-          <label class="fleche droite d2" for="position_2" aria-hidden="true"></label>
-
-          <!-- Position #2 -->
-          <label class="fleche gauche g2" for="position_1" aria-hidden="true"></label>
-          <label class="fleche droite d2" for="position_3" aria-hidden="true"></label>
-
-          <!-- Position #1 -->
-          <label class="fleche gauche g3" for="position_2" aria-hidden="true"></label>
-          <label class="fleche droite d3" for="position_3" aria-hidden="true"></label>
-
-        </div>
       
-      </div>
+      <div class="carousel_artistes">
 
-	    <p class="texte">Des artistes visionnaires unis par la passion et l'excellence photographique.</p>
-    </div>
+        <!-- États -->
+        <input type="radio" name="pos" id="pos1" checked>
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3">
+        
+        <!-- Vitrine -->
+        <div class="viewport">
+         <div class="track">
+
+            <div class="item">
+              <img src="images/Mohammed_photographe.jpg" alt="" class="photo_carousel">
+              <p class="titre">Mohammed Ibrahim</p>
+            </div>
+
+            <div class="item">
+              <img src="images/Ayanfe_photographe.jpg" alt="" class="photo_carousel">
+              <p class="titre">Ayanfe Olarinde</p>
+            </div>
+
+            <div class="item">
+              <img src="images/Pedro_photographe.jpg" alt="" class="photo_carousel">
+              <p class="titre">Pedro Ferreira</p>
+            </div>
+
+            <div class="item">
+              <img src="images/Salah_photographe.jpg" alt="" class="photo_carousel">
+              <p class="titre">Salah Darwish</p>
+            </div>
+
+            <div class="item">
+              <img src="images/Mathieu_photographe.jpg" alt="" class="photo_carousel">
+              <p class="titre">Mathieu Bonnet</p>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="arrows">
+          <!-- flèche gauche -->
+          <label for="pos1" class="arrow prev a1"></label>
+          <label for="pos2" class="arrow prev a2"></label>
+          <label for="pos3" class="arrow prev a3"></label>
+
+          <!-- flèche droite -->
+          <label for="pos1" class="arrow next b1"></label>
+          <label for="pos2" class="arrow next b2"></label>
+          <label for="pos3" class="arrow next b3"></label>
+        </div>
+        </div>
+
+        <!-- Boutons -->
+        <div class="controls">
+          <label for="pos1"></label>
+          <label for="pos2"></label>
+          <label for="pos3"></label>
+        </div>
 
     <!-- Oeuvres -->
     <div>
@@ -136,31 +171,43 @@
 	
   <footer> <!-- Footer -->
 
-	  <section id="coordonnees"> <!-- Coordonées -->
-		  <h2 class="titre">Paul Dechewsky</h2>
-		  <p class="texte">
-			10 Rue de la République,75000 Paris <br> Tel : 01.63.45.85.56 <br> Fax : 01.63.45.85.56 <br> Email : galerie.memoire.perdue@gmail.com
-		  </p>
+    <!-- Contacts -->
+    <section id="contacts">
 
-	    <div id="reseauxsociaux"> <!-- Réseaux sociaux -->
-		    <a href=""><img src="images/logo_insta.png" alt="Instagram"/></a>
-		    <a href=""><img src="images/logo_facebook.png" alt="Facebook"/></a>
-		    <a href=""><img src="images/logo_pinterest.png" alt="Pinterest"/></a>
-		    <a href=""><img src="images/logo_linkedin.png" alt="LinkedIn"/></a>
-	    </div>
+      <!-- Informations -->
+      <div class="info">
+        <!-- Coordonées -->
+	      <div class="coordonnees">
+		      <h2 class="titre">Paul Dechewsky</h2>
+		      <p class="texte">
+			    10 Rue de la République,75000 Paris <br> Tel : 01.63.45.85.56 <br> Fax : 01.63.45.85.56 <br> Email : galerie.memoire.perdue@gmail.com
+		      </p>
+        </div>
+      
+        <!-- Réseaux sociaux -->
+	      <div class="rs">
+		      <a href=""><img src="images/logo_insta.png" alt="Instagram" class="photo_rs"/></a>
+		      <a href=""><img src="images/logo_facebook.png" alt="Facebook" class="photo_rs"/></a>
+		      <a href=""><img src="images/logo_pinterest.png" alt="Pinterest" class="photo_rs"/></a>
+		      <a href=""><img src="images/logo_linkedin.png" alt="LinkedIn" class="photo_rs"/></a>
+	      </div>
+      
+      </div>
+      
+      <!-- Formulaire-->
+      <form id="formulaire">
+        <fieldset>
+            <legend id="title" class="titre">FORMULAIRE DE CONTACT</legend>
+            <p class="titre">Nom</br><input type="text" name="name" id="nom" placeholder="Nom" required></p> 
+            <p class="titre">Mail</br><input type="mail" name="mail" id="mail" placeholder="Mail" required></p>
+        </fieldset>
+      </form>
 
     </section>
 
-    <form id="contact"> <!-- Formulaire-->
-      <fieldset>
-          <legend id="title" class="titre">FORMULAIRE DE CONTACT</legend>
-          <p class="titre">Nom</br><input type="text" name="name" id="nom" placeholder="Nom" required></p> 
-          <p class="titre">Mail</br><input type="mail" name="mail" id="mail" placeholder="Mail" required></p>
-      </fieldset>
-    </form>
-
   </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>
