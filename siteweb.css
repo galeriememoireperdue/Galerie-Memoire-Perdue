@@ -6,154 +6,26 @@ html{
     background-color: #550000 ; /*Couleur du fond*/
 }
 
+html{
+    background-color: #550000 ; /*Couleur du fond*/
+    max-width: 1080x;
+    border: red solid;
+}
+
 /* TYPOGRAPHIE */
 
-
 .titre{
-    font-family: "Pirata One" ;
-    color: #f6cacc;
+  border: red solid;
+  font-family: "Pirata One" ;
+  color: #f6cacc;
 }
 
 .texte{
-    font-family :"Poppins" ;
-    color: #f6cacc;
+  border: red solid;
+  font-family :"Poppins" ;
+  color: #f6cacc;
 }
 
-/* CAROUSEL DES ARTISTES */
-
-.carousel{
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.banque_carousel{
-    display: flex;
-    justify-content: space-around; 
-    width: 50%;
-    transition : transform 0.6s ease;
-}
-
-.photo_carousel{
-    width: 20% ;
-    text-align: center;
-}
-
-.photo_carousel img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-    /*Positions du carousel*/
-.carousel {
-    margin-left: 15%;
-    margin-right: 15%;
-    overflow: hidden;
-    padding: 20px 0;
-}
-
-.banque_carousel {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-}
-
-.photo_carousel {
-    width: 150px;
-    text-align: center;
-}
-
-.photo_carousel img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.photo_carousel p {
-    margin: 10px 0 0;
-    color: #fff;
-    font-size: 14px;
-}
-
-    /*Boutons de navigation*/
-
-.navigation .fleche {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    font-size: 22px;
-    cursor: pointer;
-    user-select: none;
-    border-radius: 50%;
-    background: red;
-}
-
-.fleche .gauche {left: 8px;}
-.fleche .droite {right: 8px;}
-
-.navigation .gauche::after {
-    content: "<";
-    display: inline-block;
-}
-
-.navigation .droite::after {
-    content: ">";
-    display: inline-block;
-}
-
-    /*Affichage du carousel*/
-
-.navigation .fleche {display: none;}
-
-#position_1:checked ~ .navigation .d1 {display: block;}
-
-#position_2:checked ~ .navigation .g2,
-#position_2:checked ~ .navigation .d2 {display: block;}
-
-#position_3:checked ~ .navigation .g3 {display: block;}
-
-.navigation .fleche:focus {
-    outline: 2px solide #333;
-    outline-offset: 2px;
-}
-
-
-/* OEUVRES */
-
-#oeuvres{
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-direction:column ;
-    justify-content: center;
-    padding: 10px;
-}
-
-.ligne_oeuvres{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-.portrait{
-    border-radius: 30px;
-    max-width: 30%;
-    max-height: auto;
-    object-fit: contain
-}
-
-.paysage{
-    border-radius: 30px;
-    max-width: 100%;
-    max-height: auto;
-    object-fit: contain
-}
 #accueil {
     display: flex;               /* aligne les images côte à côte */
     justify-content: center;     /* centre le tout */
@@ -184,4 +56,257 @@ ul li a {
 
 ul li a:hover {
   background-color: #5f0c0c;
+}
+
+/* PRESENTATION */
+
+#presentation{
+  border: #00ffff solid;
+}
+
+.presentation_globale{
+  border: #ff00aa solid;
+  max-height: auto;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo_globale{
+  border: rgb(4, 255, 0) solid;
+  max-width: 40%;
+  max-height: auto;
+  border-radius: 30px;
+}
+
+.texte_globale{
+  border: rgb(4, 255, 0) solid;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ENGAGEMENTS */
+
+.presentation_engagements{
+  padding: 2% 10%;
+  justify-content: space-around;
+  border: #ff00aa solid;
+}
+
+.texte_engagements{
+  border: rgb(4, 255, 0) solid;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(221, 43, 3, 0.8);
+  border-radius: 30px;
+}
+
+
+/* VALEURS */
+
+.presentation_valeurs{
+  border: rgb(4, 255, 0) solid;
+  padding: 2% 0%;
+  max-height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.valeurs{
+  align-items: center;
+}
+
+.photo_valeurs{
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  border: #2200ff solid;
+}
+
+.texte_valeurs{
+  max-width: 85%;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(221, 43, 3, 0.8);
+  border-radius: 30px;
+  transform: translateY(-100%);
+  border: #00ffff solid;
+}
+
+/* CAROUSEL */
+
+.carousel_artistes{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+/* radio cachés */
+.carousel_artistes input {
+  display: none;
+}
+
+.viewport {
+  overflow: hidden;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.track {
+    display: flex;
+    width: calc(5 * (55%/ 3)); /* 5 images, 3 visibles */
+    transition: transform 0.5s ease;
+}
+
+/* 3 images visibles */
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 calc(100% / 3);
+    padding: 10px;
+}
+
+.photo_carousel{
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Positions (3 états seulement) */
+#pos1:checked ~ .viewport .track {
+  transform: translateX(0%);
+}
+
+#pos2:checked ~ .viewport .track {
+  transform: translateX(calc(-105% / 3));
+}
+
+#pos3:checked ~ .viewport .track {
+  transform: translateX(calc(-210% / 3));
+}
+
+/* Boutons */
+.controls {
+  margin-top: 15px;
+  text-align: center;
+}
+
+input#pos1:checked ~ .controls label[for="pos1"],
+input#pos2:checked ~ .controls label[for="pos2"],
+input#pos3:checked ~ .controls label[for="pos3"] {
+  background: #fff;
+}
+
+/* conteneur flèches */
+.arrows {
+  position: relative;
+  width: 70%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* flèche gauche */
+.arrow.prev::before {
+  content: "‹";
+  position: absolute;
+  font-size: 100px;
+  left: 10px;
+  top: 0;
+  transform: translateY(-190%);
+}
+
+/* flèche droite */
+.arrow.next::before {
+  content: "›";
+  position: absolute;
+  font-size: 100px;
+  left: 10px;
+  top: 0;
+  transform: translateY(-190%);
+}
+
+.arrow.prev { left: -40px; }
+.arrow.next { right: -40px; }
+
+/* toutes les flèches invisibles par défaut */
+.arrow { display: none; }
+
+/* règles d'apparition selon l'état */
+
+#pos1:checked ~ .arrows .b2 { display: block; } /* → pos2 */
+#pos2:checked ~ .arrows .a1 { display: block; } /* ← pos1 */
+#pos2:checked ~ .arrows .b3 { display: block; } /* → pos3 */
+#pos3:checked ~ .arrows .a2 { display: block; } /* ← pos2 */
+
+/* OEUVRES */
+
+#oeuvres{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+
+.ligne_oeuvres{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.portrait{
+    border-radius: 30px;
+    max-width: 30%;
+    max-height: auto;
+    object-fit: contain
+}
+
+.paysage{
+    border-radius: 30px;
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain
+}
+
+/* CONTACTS */
+
+#contacts{
+  border: #00ffff solid;
+  display: flex;
+}
+
+.info{
+  border: rgb(4, 255, 0) solid;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.coordonnees{
+  border: #2200ff solid;
+}
+
+.rs{
+  border: #2200ff solid;
+  display: inline-block;
+}
+
+.photo_rs{
+  max-width: 10%;
+  max-width: 10%;
+}
+
+#formulaire{
+  border: rgb(4, 255, 0) solid;
+  max-width: 50%;
 }
