@@ -153,6 +153,8 @@ nav ul li a:hover{
     border-radius: 30px;
     transform: translateY(-100%);
     border: #00ffff solid;
+    position: absolute;
+    margin: 10px;
 }
 
 /* CAROUSEL */
