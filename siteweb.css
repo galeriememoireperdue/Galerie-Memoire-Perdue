@@ -218,7 +218,6 @@ input#pos3:checked ~ .controls label[for="pos3"]{
   width: 70%;
   margin-left: 12%;
   margin-right: 12%;
-  color: #dd2b03;
 }
 
 .arrow{
@@ -236,6 +235,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
   left: 10px;
   top: 0;
   transform: translateY(-190%);
+  color: #dd2b03;
 }
 
 /* flèche droite */
@@ -246,6 +246,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
   left: 10px;
   top: 0;
   transform: translateY(-190%);
+  color: #dd2b03;
 }
 
 .arrow.prev { left: -40px; }
