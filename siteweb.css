@@ -61,7 +61,7 @@ nav ul li{
     list-style: none;
 }
 
-ul li a:hover{
+nav ul li a:hover{
   background-color: #5f0c0c;
 }
 
