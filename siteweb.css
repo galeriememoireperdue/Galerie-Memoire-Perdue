@@ -60,11 +60,11 @@ nav ul li{
     list-style: none;
 }
 
-ul li a:hover {
+ul li a:hover{
   background-color: #5f0c0c;
 }
 
-nav img{
+nav ul img{
     width: 10%;
     height: 10%;
     margin-left: 20px;
@@ -156,24 +156,24 @@ nav img{
 }
 
 /* radio cachés */
-.carousel_artistes input {
+.carousel_artistes input{
   display: none;
 }
 
-.viewport {
+.viewport{
   overflow: hidden;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-.track {
+.track{
     display: flex;
     width: calc(5 * (55%/ 3)); /* 5 images, 3 visibles */
     transition: transform 0.5s ease;
 }
 
 /* 3 images visibles */
-.item {
+.item{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,39 +188,39 @@ nav img{
 }
 
 /* Positions (3 états seulement) */
-#pos1:checked ~ .viewport .track {
+#pos1:checked ~ .viewport .track{
   transform: translateX(0%);
 }
 
-#pos2:checked ~ .viewport .track {
+#pos2:checked ~ .viewport .track{
   transform: translateX(calc(-105% / 3));
 }
 
-#pos3:checked ~ .viewport .track {
+#pos3:checked ~ .viewport .track{
   transform: translateX(calc(-210% / 3));
 }
 
 /* Boutons */
-.controls {
+.controls{
   margin-top: 15px;
   text-align: center;
 }
 
 input#pos1:checked ~ .controls label[for="pos1"],
 input#pos2:checked ~ .controls label[for="pos2"],
-input#pos3:checked ~ .controls label[for="pos3"] {
+input#pos3:checked ~ .controls label[for="pos3"]{
   background: #fff;
 }
 
 /* conteneur flèches */
-.arrows {
+.arrows{
   position: relative;
   width: 70%;
   margin-left: 12%;
   margin-right: 12%;
 }
 
-.arrow {
+.arrow{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -228,7 +228,7 @@ input#pos3:checked ~ .controls label[for="pos3"] {
 }
 
 /* flèche gauche */
-.arrow.prev::before {
+.arrow.prev:before{
   content: "‹";
   position: absolute;
   font-size: 100px;
@@ -238,7 +238,7 @@ input#pos3:checked ~ .controls label[for="pos3"] {
 }
 
 /* flèche droite */
-.arrow.next::before {
+.arrow.next::before{
   content: "›";
   position: absolute;
   font-size: 100px;
