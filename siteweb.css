@@ -37,6 +37,7 @@ html{
     height: auto;                /* garde les proportions */
     object-fit: cover;           /* optionnel */
     border-radius: 10px;         /* optionnel : joli */
+    display: inline-block;
 }
 
 nav{
@@ -323,8 +324,4 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 #formulaire{
   border: rgb(4, 255, 0) solid;
   max-width: 50%;
-}
-
-send_button{
-    background-color: #dd2b03;
 }
