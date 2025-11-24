@@ -98,6 +98,14 @@ nav ul img{
   flex-direction: column;
 }
 
+.texte{
+    text-align: center;
+}
+
+.titre{
+    text-align: center;
+}
+
 /* ENGAGEMENTS */
 
 .presentation_engagements{
