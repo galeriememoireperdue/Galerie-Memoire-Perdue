@@ -64,6 +64,11 @@ ul li a:hover {
   background-color: #5f0c0c;
 }
 
+nav img{
+    width: 14px;
+    height: 14px;
+}
+
 /* PRESENTATION */
 
 #presentation{
