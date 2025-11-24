@@ -100,9 +100,9 @@ nav ul img{
 .bouton_g{
   font-size: 30px;
   color: #ffffff;
-background-color: #dd2b03;
-font-family: "Pirata One";
-border-radius: 30px;
+  background-color: #dd2b03;
+  font-family: "Pirata One";
+  border-radius: 30px;
 }
 
 /* ENGAGEMENTS */
@@ -330,4 +330,12 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 
 #formulaire{
   border: rgb(4, 255, 0) solid;
+}
+
+#send_button{
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #dd2b03;
+  font-family: "Pirata One";
+  border-radius: 30px;   
 }
