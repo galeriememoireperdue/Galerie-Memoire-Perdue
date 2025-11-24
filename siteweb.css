@@ -97,6 +97,13 @@ nav ul img{
   display: flex;
   flex-direction: column;
 }
+.bouton_g{
+  font-size: 30px;
+  color: #ffffff;
+background-color: #dd2b03;
+font-family: "Pirata One";
+border-radius: 30px;
+}
 
 .texte{
     text-align: center;
