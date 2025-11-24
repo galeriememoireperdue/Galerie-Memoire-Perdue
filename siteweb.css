@@ -103,7 +103,7 @@ nav ul li a:hover{
     background-color: #dd2b03;
     font-family: "Pirata One";
     border-radius: 30px;
-    padding: 5px 40px;
+    padding: 3px 70px;
 }
 
 /* ENGAGEMENTS */
@@ -142,6 +142,7 @@ nav ul li a:hover{
     height: 300px;
     border-radius: 30px;
     border: #2200ff solid;
+    position: relative;
 }
 
 .texte_valeurs{
