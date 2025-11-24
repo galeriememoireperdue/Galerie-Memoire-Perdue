@@ -142,7 +142,6 @@ nav ul li a:hover{
     height: 300px;
     border-radius: 30px;
     border: #2200ff solid;
-    position: relative;
 }
 
 .texte_valeurs{
@@ -154,8 +153,6 @@ nav ul li a:hover{
     border-radius: 30px;
     transform: translateY(-100%);
     border: #00ffff solid;
-    position: absolute;
-    margin: 10px;
 }
 
 /* CAROUSEL */
