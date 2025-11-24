@@ -89,6 +89,7 @@ nav ul img{
   max-width: 40%;
   max-height: auto;
   border-radius: 30px;
+  rotate: -90deg;
 }
 
 .texte_globale{
