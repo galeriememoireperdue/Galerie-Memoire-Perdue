@@ -65,8 +65,9 @@ ul li a:hover {
 }
 
 nav img{
-    width: 14px;
-    height: 14px;
+    width: 10%;
+    height: 10%;
+    margin-left: 20px;
 }
 
 /* PRESENTATION */
