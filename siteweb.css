@@ -26,17 +26,18 @@ html{
   color: #f6cacc;
 }
 
-#accueil {
+#accueil{
     display: flex;               /* aligne les images côte à côte */
     justify-content: center;     /* centre le tout */
     gap: 20px;                   /* espace entre les images */
 }
 
-#accueil img {
+#accueil img{
     width: 40%;                  /* taille moyenne */
     height: auto;                /* garde les proportions */
     object-fit: cover;           /* optionnel */
     border-radius: 10px;         /* optionnel : joli */
+    
 }
 
 nav{
@@ -47,7 +48,6 @@ nav{
 nav ul li a{
     color: #f6cacc;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
 }
