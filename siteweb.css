@@ -27,7 +27,7 @@ html{
 }
 
 #accueil{
-    display: grid;               /* aligne les images côte à côte */
+    display: flex;               /* aligne les images côte à côte */
     justify-content: center;     /* centre le tout */
     gap: 20px;                   /* espace entre les images */
 }
@@ -89,6 +89,7 @@ nav ul li a:hover{
   max-width: 40%;
   max-height: auto;
   border-radius: 30px;
+  margin-right: 30px;
 }
 
 .texte_globale{
