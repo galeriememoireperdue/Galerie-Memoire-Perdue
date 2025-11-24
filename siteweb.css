@@ -15,15 +15,15 @@ html{
 /* TYPOGRAPHIE */
 
 .titre{
-  border: red solid;
-  font-family: "Pirata One";
-  color: #f6cacc;
+    border: red solid;
+    font-family: "Pirata One";
+    color: #f6cacc;
 }
 
 .texte{
-  border: red solid;
-  font-family: "Poppins";
-  color: #f6cacc;
+    border: red solid;
+    font-family: "Poppins";
+    color: #f6cacc;
 }
 
 #accueil{
@@ -62,7 +62,7 @@ nav ul li{
 }
 
 nav ul li a:hover{
-  background-color: #5f0c0c;
+    background-color: #5f0c0c;
 }
 
 .barre_nav img{
@@ -73,106 +73,106 @@ nav ul li a:hover{
 /* PRESENTATION */
 
 #presentation{
-  border: #00ffff solid;
+    border: #00ffff solid;
 }
 
 .presentation_globale{
-  border: #ff00aa solid;
-  max-height: auto;
-  padding: 2% 5%;
-  display: flex;
-  justify-content: space-around;
+    border: #ff00aa solid;
+    max-height: auto;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .photo_globale{
-  border: rgb(4, 255, 0) solid;
-  max-width: 40%;
-  max-height: auto;
-  border-radius: 30px;
-  margin-right: 30px;
+    border: rgb(4, 255, 0) solid;
+    max-width: 40%;
+    max-height: auto;
+    border-radius: 30px;
+    margin-right: 30px;
 }
 
 .texte_globale{
-  border: rgb(4, 255, 0) solid;
-  display: flex;
-  flex-direction: column;
+    border: rgb(4, 255, 0) solid;
+    display: flex;
+    flex-direction: column;
 }
 .bouton_g{
-  font-size: 30px;
-  color: #ffffff;
-  background-color: #dd2b03;
-  font-family: "Pirata One";
-  border-radius: 30px;
-  padding: 20px 5px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #dd2b03;
+    font-family: "Pirata One";
+    border-radius: 30px;
+    padding: 20px 5px;
 }
 
 /* ENGAGEMENTS */
 
 .presentation_engagements{
-  padding: 2% 10%;
-  justify-content: space-around;
-  border: #ff00aa solid;
+    padding: 2% 10%;
+    justify-content: space-around;
+    border: #ff00aa solid;
 }
 
 .texte_engagements{
-  border: rgb(4, 255, 0) solid;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(221, 43, 3, 0.8);
-  border-radius: 30px;
+    border: rgb(4, 255, 0) solid;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(221, 43, 3, 0.8);
+    border-radius: 30px;
 }
 
 
 /* VALEURS */
 
 .presentation_valeurs{
-  border: rgb(4, 255, 0) solid;
-  padding: 2% 0%;
-  max-height: 300px;
-  display: flex;
-  justify-content: space-around;
+    border: rgb(4, 255, 0) solid;
+    padding: 2% 0%;
+    max-height: 300px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .valeurs{
-  align-items: center;
+    align-items: center;
 }
 
 .photo_valeurs{
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  border: #2200ff solid;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    border: #2200ff solid;
 }
 
 .texte_valeurs{
-  max-width: 85%;
-  max-height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(221, 43, 3, 0.8);
-  border-radius: 30px;
-  transform: translateY(-100%);
-  border: #00ffff solid;
+    max-width: 85%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(221, 43, 3, 0.8);
+    border-radius: 30px;
+    transform: translateY(-100%);
+    border: #00ffff solid;
 }
 
 /* CAROUSEL */
 
 .carousel_artistes{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
 }
 
 /* radio cachés */
 .carousel_artistes input{
-  display: none;
+    display: none;
 }
 
 .viewport{
-  overflow: hidden;
-  margin-left: 15%;
-  margin-right: 15%;
+    overflow: hidden;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .track{
@@ -198,64 +198,64 @@ nav ul li a:hover{
 
 /* Positions (3 états seulement) */
 #pos1:checked ~ .viewport .track{
-  transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 #pos2:checked ~ .viewport .track{
-  transform: translateX(calc(-105% / 3));
+    transform: translateX(calc(-105% / 3));
 }
 
 #pos3:checked ~ .viewport .track{
-  transform: translateX(calc(-210% / 3));
+    transform: translateX(calc(-210% / 3));
 }
 
 /* Boutons */
 .controls{
-  margin-top: 15px;
-  text-align: center;
+    margin-top: 15px;
+    text-align: center;
 }
 
 input#pos1:checked ~ .controls label[for="pos1"],
 input#pos2:checked ~ .controls label[for="pos2"],
 input#pos3:checked ~ .controls label[for="pos3"]{
-  background: #fff;
+    background: #fff;
 }
 
 /* conteneur flèches */
 .arrows{
-  position: relative;
-  width: 70%;
-  margin-left: 12%;
-  margin-right: 12%;
+    position: relative;
+    width: 70%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .arrow{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 /* flèche gauche */
 .arrow.prev:before{
-  content: "‹";
-  position: absolute;
-  font-size: 100px;
-  left: 10px;
-  top: 0;
-  transform: translateY(-190%);
-  color: #dd2b03;
+    content: "‹";
+    position: absolute;
+    font-size: 100px;
+    left: 10px;
+    top: 0;
+    transform: translateY(-190%);
+    color: #dd2b03;
 }
 
 /* flèche droite */
 .arrow.next::before{
-  content: "›";
-  position: absolute;
-  font-size: 100px;
-  left: 10px;
-  top: 0;
-  transform: translateY(-190%);
-  color: #dd2b03;
+    content: "›";
+    position: absolute;
+    font-size: 100px;
+    left: 10px;
+    top: 0;
+    transform: translateY(-190%);
+    color: #dd2b03;
 }
 
 .arrow.prev { left: -40px; }
@@ -304,39 +304,39 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 /* CONTACTS */
 
 #contacts{
-  border: #00ffff solid;
-  display: flex;
+    border: #00ffff solid;
+    display: flex;
 }
 
 .info{
-  border: rgb(4, 255, 0) solid;
-  max-width: 50%;
-  display: flex;
-  flex-direction: column;
+    border: rgb(4, 255, 0) solid;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .coordonnees{
-  border: #2200ff solid;
+    border: #2200ff solid;
 }
 
 .rs{
-  border: #2200ff solid;
-  display: inline-block;
+    border: #2200ff solid;
+    display: inline-block;
 }
 
 .photo_rs{
-  max-width: 10%;
-  max-width: 10%;
+    max-width: 10%;
+    max-width: 10%;
 }
 
 #formulaire{
-  border: rgb(4, 255, 0) solid;
+    border: rgb(4, 255, 0) solid;
 }
 
 #send_button{
-  font-size: 16px;
-  color: #ffffff;
-  background-color: #dd2b03;
-  font-family: "Pirata One";
-  border-radius: 30px;   
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #dd2b03;
+    font-family: "Pirata One";
+    border-radius: 30px;   
 }
