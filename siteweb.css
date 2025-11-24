@@ -41,7 +41,6 @@ html{
 }
 
 nav{
-    border-radius: 30px;
     background-color: #dd2b03;
     display: flex;
 }
@@ -66,7 +65,7 @@ nav ul li a:hover{
   background-color: #5f0c0c;
 }
 
-.barrenav img{
+.barre_nav img{
     width: 14px;
     height: 14px;
 }
