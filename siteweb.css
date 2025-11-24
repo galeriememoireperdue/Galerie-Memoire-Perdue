@@ -66,10 +66,9 @@ nav ul li a:hover{
   background-color: #5f0c0c;
 }
 
-nav ul img{
-    width: 10%;
-    height: 10%;
-    margin-left: 20px;
+.barrenav img{
+    width: 14px;
+    height: 14px;
 }
 
 /* PRESENTATION */
