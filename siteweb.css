@@ -37,7 +37,7 @@ html{
     height: auto;                /* garde les proportions */
     object-fit: cover;           /* optionnel */
     border-radius: 10px;         /* optionnel : joli */
-    margin-right: 30%;
+    margin-right: 5%;
 }
 
 nav{
