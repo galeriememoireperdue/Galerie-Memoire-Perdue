@@ -37,7 +37,7 @@ html{
     height: auto;                /* garde les proportions */
     object-fit: cover;           /* optionnel */
     border-radius: 10px;         /* optionnel : joli */
-    display: inline-block;
+    display: block;
 }
 
 nav{
