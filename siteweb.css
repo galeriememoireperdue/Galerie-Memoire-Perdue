@@ -27,7 +27,7 @@ html{
 }
 
 #accueil{
-    display: block;               /* aligne les images côte à côte */
+    display: grid;               /* aligne les images côte à côte */
     justify-content: center;     /* centre le tout */
     gap: 20px;                   /* espace entre les images */
 }
