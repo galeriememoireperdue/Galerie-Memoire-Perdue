@@ -33,11 +33,11 @@ html{
 }
 
 #accueil img{
-    width: 40%;                  /* taille moyenne */
+    width: 50%;                  /* taille moyenne */
     height: auto;                /* garde les proportions */
     object-fit: cover;           /* optionnel */
     border-radius: 10px;         /* optionnel : joli */
-    
+    display: flex;    
 }
 
 nav{
