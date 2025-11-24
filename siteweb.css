@@ -324,3 +324,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
   border: rgb(4, 255, 0) solid;
   max-width: 50%;
 }
+
+send_button{
+    background-color: #dd2b03;
+}
