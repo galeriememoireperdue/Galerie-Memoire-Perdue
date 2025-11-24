@@ -332,7 +332,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 }
 
 #send_button{
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   background-color: #dd2b03;
   font-family: "Pirata One";
