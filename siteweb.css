@@ -80,16 +80,6 @@ nav li + li:before{
     padding-right: 40px;
 }
 
-.barre_nav .barre_nav_nom{
-    color: #f6cacc;
-    font-family: "Pirata One";
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 40px;
-    display: flex;
-}
-
 .barre_nav img{
     width: 30px;
     height: 30px;
