@@ -50,7 +50,7 @@ nav ul li a{
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    margin-right: 150px;
+    margin-right: 50px;
 }
 
 nav ul{
@@ -67,12 +67,12 @@ nav ul li a:hover{
 
 nav li + li:before{
     content: " | ";
-    padding: 0 10px;
+    padding-right: 50px;
 }
 
 .barre_nav img{
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     
 }
 
