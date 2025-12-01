@@ -349,6 +349,7 @@ input[type=text]{
     border-radius: 30px;
     background-color: #dd2b03;
     color: #f6cacc;
+    font-family: "Pirata One";
 }
 
 #send_button{
