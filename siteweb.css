@@ -87,6 +87,15 @@ nav li + li:before{
     float: right;
 }
 
+.barre_nav .barre_nav_nom{
+    color: #f6cacc;
+    font-family: "Pirata One";
+    font-size: 20px;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
 /* PRESENTATION */
 
 #presentation{
