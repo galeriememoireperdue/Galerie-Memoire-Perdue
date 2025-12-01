@@ -94,7 +94,7 @@ nav li + li:before{
     width: 30px;
     height: 30px;
     align-items: center;
-    right: 0;
+    float: right;
 }
 
 /* PRESENTATION */
