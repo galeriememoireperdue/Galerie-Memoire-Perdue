@@ -18,44 +18,66 @@ html{
     border: red solid;
     font-family: "Pirata One";
     color: #f6cacc;
+    margin: 0.5%;
 }
 
 .texte{
     border: red solid;
     font-family: "Poppins";
     color: #f6cacc;
+    margin : 0.5%;
 }
 
 #accueil{
-    display: flex;               /* aligne les images côte à côte */
-    justify-content: center;     /* centre le tout */
-    gap: 20px;                   /* espace entre les images */
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;     
+    gap: 20px;                   
 }
 
-#accueil img{
-    width: 40%;                  /* taille moyenne */
-    height: auto;                /* garde les proportions */
-    object-fit: cover;           /* optionnel */
-    border-radius: 10px;         /* optionnel : joli */
-    display: block;
-}
-
-.barre_nav{
-    box-sizing: border-box;
-    display: block;
-    position: relative;
-    margin-top: 10px;
-    border-radius: 30px;
-    background-color: #dd2b03;
-    align-items: center;
-    justify-content: left;
-}
-
-nav{
+.accueil_expo{
     display: flex;
 }
 
-nav ul li a{
+.exposition{
+    border: #00ffff 1px solid;
+    max-width: 50%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_expo{
+    border: greenyellow 1px solid;
+    max-width: 100%;
+    height: auto;
+}
+
+.texte_expo{
+    border:#ff00aa 1px solid;
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 0%;
+    font-size: 200%;
+    background-color: rgba(221, 43, 3, 0.8);
+    border-radius: 30px;
+    transform: translateY(-150%);
+}
+
+.barre_nav{
+    border: greenyellow 1px solid;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: #dd2b03;
+}
+
+.barre_nav ul li a{
     color: #f6cacc;
     align-items: center;
     text-decoration: none;
@@ -63,37 +85,37 @@ nav ul li a{
     margin-right: 40px;
 }
 
-nav ul{
+.barre_nav ul{
     display: flex;
 }
 
-nav ul li{
+.barre_nav ul li{
     list-style: none;
 }
 
-nav ul li a:hover{
+.barre_nav ul li a:hover{
     background-color: #5f0c0c;
 }
 
-nav li + li:before{
+.barre_nav li + li:before{
     content: " ｜ ";
     padding-right: 40px;
 }
 
-.barre_nav img{
-    width: 30px;
-    height: 30px;
+.barre_nav_nom{
+    border: #00ffff 1px solid;
+    display: flex;
     align-items: center;
-    float: right;
-}
-
-.barre_nav .barre_nav_nom{
-    color: #f6cacc;
-    font-family: "Pirata One";
     font-size: 20px;
-    align-items: center;
     text-decoration: none;
     margin-right: 40px;
+}
+
+.logo{
+    border: #ff00aa 1px solid;
+    align-items: end;
+    width: 5%;
+    height: auto;
 }
 
 /* PRESENTATION */
@@ -161,6 +183,8 @@ nav li + li:before{
 }
 
 .valeurs{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -172,13 +196,15 @@ nav li + li:before{
 }
 
 .texte_valeurs{
-    max-width: 85%;
+    max-width: 80%;
     max-height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: rgba(221, 43, 3, 0.8);
     border-radius: 30px;
-    transform: translateY(-100%);
+    transform: translateY(-125%);
     border: #00ffff solid;
 }
 
