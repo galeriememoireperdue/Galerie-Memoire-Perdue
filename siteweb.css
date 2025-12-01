@@ -92,8 +92,8 @@ nav li + li:before{
 .barre_nav img{
     width: 30px;
     height: 30px;
-    justify-content: right;
     align-items: center;
+    right: 0;
 }
 
 /* PRESENTATION */
