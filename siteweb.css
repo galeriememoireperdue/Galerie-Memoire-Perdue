@@ -8,7 +8,7 @@ html{
 
 html{
     background-color: #550000; /*Couleur du fond*/
-    max-width: 1080px;
+    max-width: auto;
     border: red solid;
 }
 
