@@ -82,11 +82,11 @@ nav li + li:before{
 
 .barre_nav .barre_nav_nom{
     color: #f6cacc;
+    font-family: "Pirata One";
     align-items: center;
     text-decoration: none;
     font-size: 20px;
     margin-right: 40px;
-    display: inline-block;
 }
 
 .barre_nav img{
