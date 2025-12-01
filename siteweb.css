@@ -40,8 +40,17 @@ html{
     display: block;
 }
 
-nav{
+.barre_nav{
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border-radius: 30px;
     background-color: #dd2b03;
+    align-items: center;
+    justify-content: left;
+}
+
+nav{
     display: flex;
 }
 
@@ -73,7 +82,7 @@ nav li + li:before{
 .barre_nav img{
     width: 20px;
     height: 20px;
-    
+    justify-content: right;
 }
 
 /* PRESENTATION */
