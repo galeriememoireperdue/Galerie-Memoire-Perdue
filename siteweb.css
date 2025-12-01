@@ -86,8 +86,7 @@ nav li + li:before{
     text-decoration: none;
     font-size: 20px;
     margin-right: 40px;
-    display: flex;
-    position: relative;
+    display: inline-block;
 }
 
 .barre_nav img{
