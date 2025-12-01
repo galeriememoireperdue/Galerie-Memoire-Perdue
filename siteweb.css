@@ -80,7 +80,7 @@ nav li + li:before{
     padding-right: 40px;
 }
 
-.barre_nav_nom{
+.barre_nav .barre_nav_nom{
     color: #f6cacc;
     align-items: center;
     text-decoration: none;
