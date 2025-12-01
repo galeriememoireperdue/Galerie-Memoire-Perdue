@@ -114,13 +114,14 @@ nav li + li:before{
     display: flex;
     flex-direction: column;
 }
+
 .bouton_g{
-    font-size: 30px;
+    font-size: 16px;
     color: #ffffff;
     background-color: #dd2b03;
     font-family: "Pirata One";
     border-radius: 30px;
-    padding: 3px 70px;
+    padding: 3px 60px;
 }
 
 /* ENGAGEMENTS */
