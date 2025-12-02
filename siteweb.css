@@ -104,7 +104,7 @@ html{
 
 .barre_nav_nom{
     border: #00ffff 1px solid;
-    display: flex;
+    display: inline-block;
     align-items: center;
     font-size: 20px;
     text-decoration: none;
