@@ -114,7 +114,7 @@ html{
 .logo{
     border: #ff00aa 1px solid;
     align-items: end;
-    width: 5%;
+    width: auto;
     height: auto;
 }
 
