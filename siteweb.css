@@ -9,22 +9,28 @@ html{
 html{
     background-color: #550000; /*Couleur du fond*/
     max-width: auto;
-    border: red solid;
 }
 
 /* TYPOGRAPHIE */
 
 .titre{
-    border: red solid;
     font-family: "Pirata One";
     color: #f6cacc;
+    font-size: 48px;
+    margin: 0.5%;
+}
+
+.sous_titre{
+    font-family: "Pirata One";
+    color: #f6cacc;
+    font-size: 30px;
     margin: 0.5%;
 }
 
 .texte{
-    border: red solid;
     font-family: "Poppins";
     color: #f6cacc;
+    font-size: 16px;
     margin : 0.5%;
 }
 
@@ -40,7 +46,6 @@ html{
 }
 
 .exposition{
-    border: #00ffff 1px solid;
     max-width: 50%;
     max-height: 700px;
     display: flex;
@@ -49,13 +54,11 @@ html{
 }
 
 .photo_expo{
-    border: greenyellow 1px solid;
     max-width: 100%;
     height: auto;
 }
 
 .texte_expo{
-    border:#ff00aa 1px solid;
     width: 85%;
     height: auto;
     display: flex;
@@ -69,66 +72,67 @@ html{
     transform: translateY(-150%);
 }
 
-.barre_nav{
-    border: greenyellow 1px solid;
+.description_expo{
+    font-family: "Poppins";
+    color: #f6cacc;
+    font-size: 25px;
+    margin : 0.5%;
+}
+
+.barre_nav {
     display: flex;
-    margin-top: 10px;
-    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
     background-color: #dd2b03;
 }
 
-.barre_nav ul li a{
+/* Titre à gauche */
+.marque {
+    margin: 0%;
+    padding-left: 20px;
+    font-family: "Pirata One";
+    font-size: 25px;
     color: #f6cacc;
-    align-items: center;
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 40px;
 }
 
-.barre_nav ul{
+/* Zone centrale */
+.nav_centre {
     display: flex;
-}
-
-.barre_nav ul li{
     list-style: none;
+    padding: 0;
+    margin: 1%;
+    font-family: "Pirata One";
+    font-size: 25px;
+    color: #f6cacc;
 }
 
-.barre_nav ul li a:hover{
+.nav_centre li + li::before {
+    content: " ｜ ";
+    padding: 0 20px;
+    color: #f6cacc;
+}
+
+.nav_centre li a {
+    color: #f6cacc;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav_centre li a:hover {
     background-color: #5f0c0c;
 }
 
-.barre_nav li + li:before{
-    content: " ｜ ";
-    padding-right: 40px;
-}
-
-.barre_nav_nom{
-    border: #00ffff 1px solid;
-    display: inline-block;
-    align-items: center;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 40px;
-    font-family: "Pirata One";
-    color: #f6cacc;
-}
-
-.logo{
-    border: #ff00aa 1px solid;
-    align-items: end;
-    width: 3%;
-    height: 3%;
+/* Logo à droite */
+.logo {
+    width: 30px;
+    height: auto;
+    padding-right: 20px;
 }
 
 /* PRESENTATION */
 
-#presentation{
-    border: #00ffff solid;
-}
-
 .presentation_globale{
-    border: #ff00aa solid;
     max-height: auto;
     padding: 2% 5%;
     display: flex;
@@ -136,7 +140,6 @@ html{
 }
 
 .photo_globale{
-    border: rgb(4, 255, 0) solid;
     max-width: 40%;
     max-height: auto;
     border-radius: 30px;
@@ -144,18 +147,20 @@ html{
 }
 
 .texte_globale{
-    border: rgb(4, 255, 0) solid;
     display: flex;
     flex-direction: column;
 }
 
 .bouton_g{
-    font-size: 20px;
-    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 20%;
+    height: 15%;
+    text-decoration: none;
     background-color: #dd2b03;
-    font-family: "Pirata One";
     border-radius: 30px;
-    padding: 3px 10px;
+    margin: 10px 50px;
 }
 
 /* ENGAGEMENTS */
@@ -163,14 +168,14 @@ html{
 .presentation_engagements{
     padding: 2% 10%;
     justify-content: space-around;
-    border: #ff00aa solid;
 }
 
 .texte_engagements{
-    border: rgb(4, 255, 0) solid;
     display: flex;
     flex-direction: column;
-    background-color: rgba(221, 43, 3, 0.8);
+    align-items: center;
+    text-align: center;
+    background-color: rgba(221, 43, 3, 0.5);
     border-radius: 30px;
 }
 
@@ -178,7 +183,6 @@ html{
 /* VALEURS */
 
 .presentation_valeurs{
-    border: rgb(4, 255, 0) solid;
     padding: 2% 0%;
     max-height: 300px;
     display: flex;
@@ -195,7 +199,6 @@ html{
     width: 300px;
     height: 300px;
     border-radius: 30px;
-    border: #2200ff solid;
 }
 
 .texte_valeurs{
@@ -205,13 +208,25 @@ html{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 26px;
     background-color: rgba(221, 43, 3, 0.8);
     border-radius: 30px;
     transform: translateY(-125%);
-    border: #00ffff solid;
+}
+
+/* ARTISTE */
+
+.titre_artiste{
+    text-align: center;
 }
 
 /* CAROUSEL */
+
+.nom_artiste{
+    font-family: "Pirata One";
+    font-size: 25px;
+    color: #f6cacc;
+}
 
 .carousel_artistes{
     width: 100%;
@@ -329,6 +344,10 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 
 /* OEUVRES */
 
+.titre_oeuvres{
+    text-align: center;
+}
+
 #oeuvres{
     margin-left: 15%;
     margin-right: 15%;
@@ -360,33 +379,28 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 /* CONTACTS */
 
 #contacts{
-    border: #00ffff solid;
     display: flex;
+    justify-content: space-between;
 }
 
 .info{
-    border: rgb(4, 255, 0) solid;
     max-width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.coordonnees{
-    border: #2200ff solid;
-}
-
 .rs{
-    border: #2200ff solid;
     display: inline-block;
+    margin-top: 2%;
 }
 
 .photo_rs{
-    max-width: 10%;
-    max-width: 10%;
+    max-width: 7.5%;
 }
 
-#formulaire{
-    border: rgb(4, 255, 0) solid;
+.ligne{
+    width: 100%;
+    border: #f6cacc 1px solid;
 }
 
 input[type=text]{
@@ -402,8 +416,8 @@ input[type=text]{
 }
 
 #send_button{
+    color: #f6cacc;
     font-size: 16px;
-    color: #ffffff;
     background-color: #dd2b03;
     font-family: "Pirata One";
     border-radius: 30px;   
