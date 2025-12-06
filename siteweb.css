@@ -10,8 +10,7 @@ html{
     background-color: #550000; /*Couleur du fond*/
 }
 
-/* TYPOGRAPHIE */
-
+/* Typographiques */
 .titre{
     font-family: "Pirata One";
     color: #f6cacc;
@@ -33,6 +32,8 @@ html{
     margin : 0.5%;
 }
 
+
+/* Section accueil */
 #accueil{
     display: flex;
     flex-direction: column;        
@@ -40,6 +41,7 @@ html{
     gap: 20px;                   
 }
 
+    /*Présentation des expositions du moment*/
 .accueil_expo{
     display: flex;
 }
@@ -76,8 +78,7 @@ html{
     margin : 0.5%;
 }
 
-
-
+    /*Barre de navigation*/
 .barre_nav {
     display: flex;
     justify-content: space-between;
@@ -86,7 +87,7 @@ html{
     background-color: #dd2b03;
 }
 
-/* Titre à gauche */
+        /* Nom de marque */
 .marque {
     margin: 0%;
     padding-left: 20px;
@@ -95,7 +96,7 @@ html{
     color: #f6cacc;
 }
 
-/* Zone centrale */
+        /* Options de navigation */
 .nav_centre {
     display: flex;
     list-style: none;
@@ -122,15 +123,15 @@ html{
     background-color: #5f0c0c;
 }
 
-/* Logo à droite */
+        /* Logo de la galerie */
 .logo {
     width: 30px;
     height: auto;
     padding-right: 20px;
 }
 
-/* PRESENTATION */
 
+/* Présentation de la galerie */
 .presentation_globale{
     height: auto;
     padding: 2% 5%;
@@ -140,13 +141,12 @@ html{
 
 .photo_globale{
     width: 40%;
-    min-width: 280px;      /* Empêche le rétrécissement */
+    min-width: 280px;
     height: auto;
     border-radius: 30px;
     margin-right: 30px;
     object-fit: cover;
 }
-
 
 @media (max-width: 600px) {
     .presentation_globale {
@@ -158,7 +158,6 @@ html{
         max-width: 90%;   /* évite qu’elle soit trop large sur petit écran */
     }
 }
-
 
 .texte_globale{
     display: flex;
@@ -177,8 +176,8 @@ html{
     margin: 10px 50px;
 }
 
-/* ENGAGEMENTS */
 
+    /* Engagements de la gallerie */
 .presentation_engagements{
     padding: 2% 10%;
     justify-content: space-around;
@@ -194,8 +193,7 @@ html{
 }
 
 
-/* VALEURS */
-
+/* Valeurs de la galerie */
 .presentation_valeurs{
     padding: 2% 0%;
     height: 300px;
@@ -228,14 +226,13 @@ html{
     transform: translateY(-125%);
 }
 
-/* ARTISTE */
-
+/* Section galerie */
+    /* Présentation des artistes */
 .titre_artiste{
     text-align: center;
 }
 
-/* CAROUSEL */
-
+            /* Carousel */
 .nom_artiste{
     font-family: "Pirata One";
     font-size: 25px;
@@ -249,8 +246,7 @@ html{
     position: relative;
 }
 
-/* radio cachés */
-.carousel_artistes input{
+.carousel_artistes input{ /* Boutons associés aux flèches */
     display: none;
 }
 
@@ -266,7 +262,7 @@ html{
     transition: transform 0.5s ease;
 }
 
-/* 3 images visibles */
+        /* 3 images visibles */
 .item{
     display: flex;
     flex-direction: column;
@@ -283,8 +279,7 @@ html{
     object-fit: cover;
 }
 
-
-/* Positions (3 états seulement) */
+                /* Positions du carousel */
 #pos1:checked ~ .viewport .track{
     transform: translateX(0%);
 }
@@ -297,7 +292,7 @@ html{
     transform: translateX(calc(-210% / 3));
 }
 
-/* Boutons */
+                /* Boutons */
 .controls{
     margin-top: 15px;
     text-align: center;
@@ -309,7 +304,6 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     background: #fff;
 }
 
-/* conteneur flèches */
 .arrows{
     position: relative;
     width: 70%;
@@ -324,7 +318,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     cursor: pointer;
 }
 
-/* flèche gauche */
+                    /* Flèche de gauche */
 .arrow.prev:before{
     content: "‹";
     position: absolute;
@@ -335,7 +329,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     color: #dd2b03;
 }
 
-/* flèche droite */
+                    /* Flèche de droite */
 .arrow.next::before{
     content: "›";
     position: absolute;
@@ -349,18 +343,15 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 .arrow.prev { left: -40px; }
 .arrow.next { right: -40px; }
 
-/* toutes les flèches invisibles par défaut */
 .arrow { display: none; }
 
-/* règles d'apparition selon l'état */
-
+                /* Positions du carousel */
 #pos1:checked ~ .arrows .b2 { display: block; } /* → pos2 */
 #pos2:checked ~ .arrows .a1 { display: block; } /* ← pos1 */
 #pos2:checked ~ .arrows .b3 { display: block; } /* → pos3 */
 #pos3:checked ~ .arrows .a2 { display: block; } /* ← pos2 */
 
-/* OEUVRES */
-
+    /* Présentation des oeuvres */
 .titre_oeuvres{
     text-align: center;
 }
@@ -393,19 +384,20 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     object-fit: contain
 }
 
-/* CONTACTS */
-
+/* Section contact */
 #contacts{
     display: flex;
     justify-content: space-between;
 }
 
+        /* Coordonées de la galerie */
 .info{
     max-width: 50%;
     display: flex;
     flex-direction: column;
 }
 
+        /* Réseaux sociaux de la galerie */
 .rs{
     display: inline-block;
     margin-top: 2%;
@@ -420,6 +412,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     border: #f6cacc 1px solid;
 }
 
+        /* Formulaire de contacts */
 input[type=text]{
     width: 100%;
     padding: 12px;
@@ -439,12 +432,12 @@ input[type=text]{
     font-family: "Pirata One";
     border-radius: 30px;   
 }
-/* Cache la checkbox */
+
+/* Menu hamburger pour la barre de navigation en responsive */
 .toggle-menu {
     display: none;
   }
   
-  /* Style du hamburger */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -463,7 +456,7 @@ input[type=text]{
   /* Responsive */
   @media (max-width: 768px) {
   
-    /* On cache la nav normale */
+    /* Remplacement des options de navigation */
     .nav_centre {
       position: absolute;
       top: 80px;
@@ -477,17 +470,14 @@ input[type=text]{
       gap: 20px;
     }
   
-    /* Le hamburger apparait */
     .hamburger {
       display: flex;
     }
   
-    /* Si checkbox cochée → menu visible */
     .toggle-menu:checked ~ .nav_centre {
       display: flex;
     }
   
-    /* (Optionnel) animation en croix */
     .toggle-menu:checked + .hamburger span:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
     }
