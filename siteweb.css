@@ -64,6 +64,7 @@ html{
     z-index: 10;
     font-size: clamp(1rem, 2.5vw, 2rem);  /* texte responsive */
 }
+
 .photo_expo{
     width: 100%;
     height: auto;
@@ -76,6 +77,22 @@ html{
     color: #f6cacc;
     font-size: 25px;
     margin : 0.5%;
+}
+/* Media queries pour écrans petits (mobile) */
+@media (max-width: 600px) {
+    .texte_expo {
+        width: 85%; 
+        padding: 2px 4px; /* réduit de 30% */
+        font-size: clamp(0.45rem, 2vw, 0.63rem); /* ~30% plus petit */
+        border-radius: 40px;
+    }
+
+    .description_expo {
+        font-size: clamp(0.49rem, 1.75vw, 0.63rem); /* ~30% plus petit */
+        width: 85%;
+        padding: 1.5px 3px; /* réduit de 30% */
+        border-radius: 40px;
+    }
 }
 
     /*Barre de navigation*/
@@ -95,6 +112,13 @@ html{
     font-size: 25px;
     color: #f6cacc;
 }
+
+@media (max-width: 600px) {
+    .marque{
+        opacity: 0%;
+    }
+}
+
 
         /* Options de navigation */
 .nav_centre {
@@ -129,7 +153,11 @@ html{
     height: auto;
     padding-right: 20px;
 }
-
+@media (max-width : 600px){
+    .logo{
+      transform: translateX(-790%);
+    }
+}
 
 /* Présentation de la galerie */
 .presentation_globale{
@@ -213,6 +241,7 @@ html{
     border-radius: 30px;
 }
 
+
 .texte_valeurs{
     max-width: 80%;
     height: auto;
@@ -224,6 +253,42 @@ html{
     background-color: rgba(221, 43, 3, 0.8);
     border-radius: 30px;
     transform: translateY(-125%);
+}
+@media (max-width: 600px) {
+
+    .presentation_valeurs {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .valeurs {
+        position: relative;
+        width: 100%;
+        max-width: 350px; /* optionnel */
+    }
+
+    .photo_valeurs {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        display: block;
+    }
+
+    .texte_valeurs {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        background-color: rgba(221, 43, 3, 0.8);
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 22px;
+        margin: 0; /* supprime tout offset */
+    }
 }
 
 /* Section galerie */
@@ -285,13 +350,31 @@ html{
 }
 
 #pos2:checked ~ .viewport .track{
-    transform: translateX(calc(-105% / 3));
+    transform: translateX(calc(-122% / 3));
 }
 
 #pos3:checked ~ .viewport .track{
-    transform: translateX(calc(-210% / 3));
+    transform: translateX(calc(-244% / 3));
 }
+@media (max-width: 600px){
 
+    .nom_artiste{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .track{
+        width: calc(5 * 48%/ 3); /* 5 images, 3 visibles */
+    }
+
+    #pos2:checked ~ .viewport .track{
+        transform: translateX(calc(-122% / 3));
+    }
+
+    #pos3:checked ~ .viewport .track{
+        transform: translateX(calc(-244% / 3));
+    }
+}
                 /* Boutons */
 .controls{
     margin-top: 15px;
@@ -376,6 +459,18 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     height: auto;
     object-fit: contain
 }
+@media (max-width: 600px) {
+    .ligne_oeuvres {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* optionnel, pour espacer les portraits */
+    }
+
+    .portrait {
+        max-width: 80%; /* ou 100%, à toi de choisir */
+    }
+}
+
 
 .paysage{
     border-radius: 30px;
@@ -383,6 +478,16 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     height: auto;
     object-fit: contain
 }
+@media (max-width: 600px) {
+    .paysage {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+    }
+}
+
 
 /* Section contact */
 #contacts{
@@ -433,6 +538,24 @@ input[type=text]{
     border-radius: 30px;   
 }
 
+@media (max-width: 600px) {
+
+    #contacts {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .info {
+      max-width: 100%;
+    }
+  
+    form {
+      margin-top: 30px;
+    }
+  
+  }
+  
+
 /* Menu hamburger pour la barre de navigation en responsive */
 .toggle-menu {
     display: none;
@@ -449,16 +572,21 @@ input[type=text]{
   .hamburger span {
     width: 25px;
     height: 3px;
-    background: white;
+    background: rgb(159, 12, 12);
     transition: 0.3s;
+  }
+
+  @media (max-width: 600px){
+    .hamburger{
+        margin-left: auto;
+    }
   }
   
   /* Responsive */
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
   
     /* Remplacement des options de navigation */
     .nav_centre {
-      position: absolute;
       top: 80px;
       left: 0;
       width: 100%;
@@ -494,3 +622,4 @@ input[type=text]{
   html, body {
     overflow-x: hidden;
 }
+
