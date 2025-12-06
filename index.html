@@ -9,11 +9,14 @@
 
 <body>
 	
-  <header> <!-- Header -->
+  <header>
+	<!-- Section accueil -->
     <section id="accueil">
 
+      <!-- Présentation des expositions actuelles -->
       <div class="accueil_expo">
 
+		<!-- Exposition 1 -->
         <div class="exposition">
           <img src="images/expo_1.jpg" class="photo_expo" alt="L'instant de rupture"/>
           <div class="texte_expo">
@@ -21,56 +24,58 @@
             <p class="description_expo">L'instant de rupture</p>
           </div>
         </div>
-        
-        <div class="exposition">
-		    <img src="images/expo_2.jpg" class="photo_expo" alt="À l'abri du monde"/>
-        <div class="texte_expo">
-          <h1 class="titre">Exposition</h1>
-          <p class="description_expo">À l’abri du monde</p>
-        </div>
-        </div>
 
+		<!-- Exposition 2 -->
+        <div class="exposition">
+			<img src="images/expo_2.jpg" class="photo_expo" alt="À l'abri du monde"/>
+        	<div class="texte_expo">
+          		<h1 class="titre">Exposition</h1>
+          		<p class="description_expo">À l’abri du monde</p>
+        	</div>
+        </div>
+	
       </div>
 
+      <!-- Barre de navigation -->
       <nav class="barre_nav">
 
+		<!-- Nom de marque -->
         <div class="nav_gauche">
           <p class="marque">Mémoire perdue</p>
         </div>
       
-        <!-- CHECKBOX POUR LE MENU MOBILE -->
+        <!-- checkbox pour le responsive -->
         <input type="checkbox" id="toggle-menu" class="toggle-menu">
         <label for="toggle-menu" class="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </label>
-      
+
+		<!-- Options de navigation -->
         <ul class="nav_centre">
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#presentation">Présentation</a></li>
           <li><a href="#galerie">Galerie</a></li>
           <li><a href="#formulaire">Contact</a></li>
         </ul>
-      
+
+		<!-- Logo -->
         <div class="nav_droite">
           <img src="images/logo_galerie.png" class="logo" alt="Logo"/>
         </div>
       
       </nav>
-      
-
     </section>
-
   </header>
 
-  <section id="presentation"> <!-- Section présentation de la galerie -->
-	  <h1 class="titre">Présentation</h1>
 
-    <!-- Présentation globale -->
+  <!-- Section de présentation de la galerie -->
+  <section id="presentation">
+	<h1 class="titre">Présentation</h1>
+
+    <!-- Présentation globale de la gallerie -->
     <div class="presentation_globale"> 
-      
-      <!-- Photo galerie-->
       <img src="images/galerie_1.jpg" alt="Galerie" class="photo_globale">
 
       <div class="texte_globale">
@@ -78,16 +83,16 @@
         <p class="texte">La galerie Mémoire perdue dévoile la beauté du monde à travers la photographie, un espace où chaque image invite à contempler, ressentir et réfléchir.</p>
         <a href="#galerie" class="bouton_g sous_titre">Galerie</a>
       </div>
-    
     </div>
 
-    <div class="presentation_engagements"> <!-- Engagement de la galerie -->
+    <!-- Présentation des engagements de la galerie -->
+    <div class="presentation_engagements">
       <div class="texte_engagements">
         <h2 class="sous_titre">Une exigence au service de la création</h2>
         <p class="texte">La galerie Mémoire perdue s’engage à valoriser la photographie comme un art du regard et du temps. Elle accompagne les artistes avec exigence et sincérité, offrant au public des œuvres qui éveillent la sensibilité et nourrissent la réflexion, dans un dialogue constant entre esthétique et émotion.</p>
       </div>
 
-      <!-- Valeurs de la galerie -->
+      <!-- Présentation des valeurs de la galerie -->
       <div class="presentation_valeurs">
 
         <!-- Valeur 1 -->
@@ -118,49 +123,54 @@
         </div>
 
       </div>
-    
     </div>
-
   </section>
 
-  <section id="galerie"> <!-- Section galerie -->
+  <!-- Section galerie -->
+  <section id="galerie">
 	  <h1 class="titre">Galerie</h1>
 
-    <!-- Artistes -->
+    <!-- Présentation des artistes -->
     <div class="artistes">
-	    <h2 class="titre_artiste sous_titre">Les artistes</h2>
-      
+	  <h2 class="titre_artiste sous_titre">Les artistes</h2>
+		
+      <!-- Carousel -->
       <div class="carousel_artistes">
 
-        <!-- États -->
+        <!-- États du carousel -->
         <input type="radio" name="pos" id="pos1" checked>
         <input type="radio" name="pos" id="pos2">
         <input type="radio" name="pos" id="pos3">
         
-        <!-- Vitrine -->
+        <!-- Collection des artistes -->
         <div class="viewport">
          <div class="track">
 
+			<!-- Artiste 1 -->
             <div class="item">
               <img src="images/Mohammed_photographe.jpg" alt="" class="photo_carousel">
               <p class="nom_artiste">Mohammed Ibrahim</p>
             </div>
 
+			<!-- Artiste 2 -->
             <div class="item">
               <img src="images/Ayanfe_photographe.jpg" alt="" class="photo_carousel">
               <p class="nom_artiste">Ayanfe Olarinde</p>
             </div>
 
+			<!-- Artiste 3 -->
             <div class="item">
               <img src="images/Pedro_photographe.jpg" alt="" class="photo_carousel">
               <p class="nom_artiste">Pedro Ferreira</p>
             </div>
 
+			<!-- Artiste 4 -->
             <div class="item">
               <img src="images/Salah_photographe.jpg" alt="" class="photo_carousel">
               <p class="nom_artiste">Salah Darwish</p>
             </div>
 
+			<!-- Artiste 5 -->
             <div class="item">
               <img src="images/Mathieu_photographe.jpg" alt="" class="photo_carousel">
               <p class="nom_artiste">Mathieu Bonnet</p>
@@ -168,51 +178,59 @@
 
           </div>
         </div>
-        
+
+		<!-- Flèches de navigation dans le carousel -->
         <div class="arrows">
-          <!-- flèche gauche -->
+			
+          <!-- Flèche de gauche -->
           <label for="pos1" class="arrow prev a1"></label>
           <label for="pos2" class="arrow prev a2"></label>
           <label for="pos3" class="arrow prev a3"></label>
 
-          <!-- flèche droite -->
+          <!-- Flèche de droite -->
           <label for="pos1" class="arrow next b1"></label>
           <label for="pos2" class="arrow next b2"></label>
           <label for="pos3" class="arrow next b3"></label>
         </div>
         </div>
 
-        <!-- Boutons -->
+        <!-- Boutons associés aux flèches -->
         <div class="controls">
           <label for="pos1"></label>
           <label for="pos2"></label>
           <label for="pos3"></label>
         </div>
 
-    <!-- Oeuvres -->
+    <!-- Section oeuvres -->
     <div>
-	    <h2 class="titre_oeuvres sous_titre">Les oeuvres</h2>
-      <div id="oeuvres"> <!-- ligne 1 de oeuvres -->
+	  <h2 class="titre_oeuvres sous_titre">Les oeuvres</h2>
+      <div id="oeuvres">
+
+		<!-- Ligne 1 des oeuvres -->
         <div class="ligne_oeuvres">
 	        <img src="images/oeuvre_1.jpg" alt="Not complicated" class="portrait">
 	        <img src="images/oeuvre_2.jpg" alt="Collateral damages" class="portrait">
 	        <img src="images/oeuvre_3.jpg" alt="Last drop" class="portrait">
         </div>
-        <div class="ligne_oeuvres"> <!-- ligne 2 de oeuvres -->
+
+		<!-- Ligne 2 des oeuvres -->
+        <div class="ligne_oeuvres">
 	      <img src="images/oeuvre_4.jpg" alt="Blazing mushroom" class="paysage"> 
         </div>
+	
       </div> 
     </div>
   </section>
 	
-  <footer> <!-- Footer -->
+  <footer>
 
-    <!-- Contacts -->
+    <!-- Section contacts -->
     <section id="contacts">
 
-      <!-- Informations -->
+      <!-- Informations de la galerie -->
       <div class="info">
-        <!-- Coordonées -->
+
+        <!-- Coordonées de la galerie -->
 	      <div>
 		      <h2 class="sous_titre">Paul Dechewsky</h2>
 		      <p class="texte">
@@ -220,17 +238,17 @@
 		      </p>
         </div>
       
-        <!-- Réseaux sociaux -->
+        <!-- Réseaux sociaux de la galerie -->
 	      <div class="rs">
 		      <a href="https://www.instagram.com"><img src="images/logo_insta.png" alt="Instagram" class="photo_rs"></a>
 		      <a href="https://www.facebook.com"><img src="images/logo_facebook.png" alt="Facebook" class="photo_rs"></a>
 		      <a href="https://fr.pinterest.com"><img src="images/logo_pinterest.png" alt="Pinterest" class="photo_rs"></a>
 		      <a href="https://fr.linkedin.com"><img src="images/logo_linkedin.png" alt="LinkedIn" class="photo_rs"></a>
 	      </div>
-      
+
       </div>
       
-      <!-- Formulaire-->
+      <!-- Formulaire de contact -->
       <form id="formulaire">
             <legend id="titre" class="sous_titre">Formulaire de contact</legend>
             <div class="ligne"></div>
@@ -241,7 +259,6 @@
       </form>
 
     </section>
-
   </footer>
 
 <script src="script.js"></script>
