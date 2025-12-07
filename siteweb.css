@@ -1,16 +1,16 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html{
-    background-color: #550000; /*Couleur du fond*/
+    background-color: #550000; /* Couleur du fond */
 }
 
 html{
-    background-color: #550000; /*Couleur du fond*/
+    background-color: #550000; /* Couleur du fond */
 }
 
 /* Typographies */
+
 .titre{
     font-family: "Pirata One";
     color: #f6cacc;
@@ -29,7 +29,7 @@ html{
     font-family: "Poppins";
     color: #f6cacc;
     font-size: 16px;
-    margin : 0.5%;
+    margin: 0.5%;
 }
 
 
@@ -62,7 +62,7 @@ html{
     border-radius: 30px;
     text-align: center;
     z-index: 10;
-    font-size: clamp(1rem, 2.5vw, 2rem);  /* texte responsive */
+    font-size: clamp(1rem, 2.5vw, 2rem);  /* Texte responsive */
 }
 
 .photo_expo{
@@ -76,28 +76,28 @@ html{
     font-family: "Poppins";
     color: #f6cacc;
     font-size: 25px;
-    margin : 0.5%;
+    margin: 0.5%;
 }
 
 /* Media queries pour écrans petits (mobile) */
-@media (max-width: 600px) {
-    .texte_expo {
+@media (max-width: 600px){
+    .texte_expo{
         width: 85%; 
         padding: 2px 4px; /* réduit de 30% */
         font-size: clamp(0.45rem, 2vw, 0.63rem); /* ~30% plus petit */
         border-radius: 40px;
     }
 
-    .description_expo {
+    .description_expo{
         font-size: clamp(0.49rem, 1.75vw, 0.63rem); /* ~30% plus petit */
         width: 85%;
-        padding: 1.5px 3px; /* réduit de 30% */
+        padding: 1.5px 3px; /* Réduit de 30% */
         border-radius: 40px;
     }
 }
 
 /* Barre de navigation */
-.barre_nav {
+.barre_nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +106,7 @@ html{
 }
 
 /* Nom de marque */
-.marque {
+.marque{
     margin: 0%;
     padding-left: 20px;
     font-family: "Pirata One";
@@ -122,7 +122,7 @@ html{
 
 
 /* Options de navigation */
-.nav_centre {
+.nav_centre{
     display: flex;
     list-style: none;
     padding: 0;
@@ -132,28 +132,29 @@ html{
     color: #f6cacc;
 }
 
-.nav_centre li + li::before {
+.nav_centre li + li::before{
     content: " ｜ ";
     padding: 0 20px;
     color: #f6cacc;
 }
 
-.nav_centre li a {
+.nav_centre li a{
     color: #f6cacc;
     text-decoration: none;
     font-size: 25px;
 }
 
-.nav_centre li a:hover {
+.nav_centre li a:hover{
     background-color: #5f0c0c;
 }
 
-        /* Logo de la galerie */
-.logo {
+/* Logo de la galerie */
+.logo{
     width: 30px;
     height: auto;
     padding-right: 20px;
 }
+
 @media (max-width : 600px){
     .logo{
       transform: translateX(-790%);
@@ -177,13 +178,13 @@ html{
     object-fit: cover;
 }
 
-@media (max-width: 600px) {
-    .presentation_globale {
+@media (max-width: 600px){
+    .presentation_globale{
         flex-direction: column;
         align-items: center;
     }
 
-    .photo_globale {
+    .photo_globale{
         max-width: 90%;   /* Pour éviter qu’elle ne soit trop large sur un petit écran */
     }
 }
@@ -254,29 +255,30 @@ html{
     border-radius: 30px;
     transform: translateY(-125%);
 }
-@media (max-width: 600px) {
 
-    .presentation_valeurs {
+@media (max-width: 600px){
+
+    .presentation_valeurs{
         flex-direction: column;
         height: auto;
         align-items: center;
         gap: 40px;
     }
 
-    .valeurs {
+    .valeurs{
         position: relative;
         width: 100%;
-        max-width: 350px; /* optionnel */
+        max-width: 350px; /* Optionnel */
     }
 
-    .photo_valeurs {
+    .photo_valeurs{
         width: 100%;
         height: auto;
         border-radius: 30px;
         display: block;
     }
 
-    .texte_valeurs {
+    .texte_valeurs{
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -287,12 +289,12 @@ html{
         padding: 10px;
         text-align: center;
         font-size: 22px;
-        margin: 0; /* supprime tout offset */
+        margin: 0; /* Supprime tout offset */
     }
 }
 
 /* Section "Galerie" */
-    /* Présentation des artistes */
+/* Présentation des artistes */
 .titre_artiste{
     text-align: center;
 }
@@ -336,7 +338,7 @@ html{
     padding: 10px;
 }
 
-.photo_carousel {
+.photo_carousel{
     width: 100%;
     max-width: 180px;
     height: auto;
@@ -459,15 +461,16 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     height: auto;
     object-fit: contain
 }
-@media (max-width: 600px) {
-    .ligne_oeuvres {
+
+@media (max-width: 600px){
+    .ligne_oeuvres{
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* optionnel, pour espacer les portraits */
+        gap: 20px; /* Optionnel, pour espacer les portraits */
     }
 
-    .portrait {
-        max-width: 80%; /* ou 100%, à toi de choisir */
+    .portrait{
+        max-width: 80%; /* Ou 100%, à toi de choisir */
     }
 }
 
@@ -477,16 +480,13 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     height: auto;
     object-fit: contain
 }
-@media (max-width: 600px) {
-    .paysage {
+
+@media (max-width: 600px){
+    .paysage{
         flex-direction: column;
         align-items: center;
-     
-    }
-
     }
 }
-
 
 /* Section "Contacts" */
 #contacts{
@@ -537,18 +537,18 @@ input[type=text]{
     border-radius: 30px;   
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px){
 
-    #contacts {
+    #contacts{
       flex-direction: column;
       gap: 30px;
     }
   
-    .info {
+    .info{
       max-width: 100%;
     }
   
-    form {
+    form{
       margin-top: 30px;
     }
   
@@ -556,11 +556,11 @@ input[type=text]{
   
 
 /* Menu hamburger pour la barre de navigation en responsive */
-.toggle-menu {
+.toggle-menu{
     display: none;
   }
   
-  .hamburger {
+  .hamburger{
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -568,7 +568,7 @@ input[type=text]{
     padding: 10px;
   }
   
-  .hamburger span {
+  .hamburger span{
     width: 25px;
     height: 3px;
     background: rgb(159, 12, 12);
@@ -581,11 +581,11 @@ input[type=text]{
     }
   }
   
-  /* Responsive */
-  @media (max-width: 600px) {
+/* Responsive */
+  @media (max-width: 600px){
   
-    /* Remplacement des options de navigation */
-    .nav_centre {
+/* Remplacement des options de navigation */
+    .nav_centre{
       top: 80px;
       left: 0;
       width: 100%;
@@ -597,27 +597,27 @@ input[type=text]{
       gap: 20px;
     }
   
-    .hamburger {
+    .hamburger{
       display: flex;
     }
   
-    .toggle-menu:checked ~ .nav_centre {
+    .toggle-menu:checked ~ .nav_centre{
       display: flex;
     }
   
-    .toggle-menu:checked + .hamburger span:nth-child(1) {
+    .toggle-menu:checked + .hamburger span:nth-child(1){
       transform: rotate(45deg) translate(5px, 5px);
     }
   
-    .toggle-menu:checked + .hamburger span:nth-child(2) {
+    .toggle-menu:checked + .hamburger span:nth-child(2){
       opacity: 0;
     }
   
-    .toggle-menu:checked + .hamburger span:nth-child(3) {
+    .toggle-menu:checked + .hamburger span:nth-child(3){
       transform: rotate(-45deg) translate(6px, -6px);
     }
   
   }
-  html, body {
+  html, body{
     overflow-x: hidden;
 }
