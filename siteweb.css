@@ -10,7 +10,7 @@ html{
     background-color: #550000; /*Couleur du fond*/
 }
 
-/* Typographiques */
+/* Typographies */
 .titre{
     font-family: "Pirata One";
     color: #f6cacc;
@@ -33,7 +33,7 @@ html{
 }
 
 
-/* Section accueil */
+/* Section "Accueil" */
 #accueil{
     display: flex;
     flex-direction: column;        
@@ -41,7 +41,7 @@ html{
     gap: 20px;                   
 }
 
-    /*Présentation des expositions du moment*/
+/* Présentation des expositions du moment */
 .accueil_expo{
     display: flex;
 }
@@ -78,6 +78,7 @@ html{
     font-size: 25px;
     margin : 0.5%;
 }
+
 /* Media queries pour écrans petits (mobile) */
 @media (max-width: 600px) {
     .texte_expo {
@@ -95,7 +96,7 @@ html{
     }
 }
 
-    /*Barre de navigation*/
+/* Barre de navigation */
 .barre_nav {
     display: flex;
     justify-content: space-between;
@@ -104,7 +105,7 @@ html{
     background-color: #dd2b03;
 }
 
-        /* Nom de marque */
+/* Nom de marque */
 .marque {
     margin: 0%;
     padding-left: 20px;
@@ -120,7 +121,7 @@ html{
 }
 
 
-        /* Options de navigation */
+/* Options de navigation */
 .nav_centre {
     display: flex;
     list-style: none;
@@ -183,7 +184,7 @@ html{
     }
 
     .photo_globale {
-        max-width: 90%;   /* évite qu’elle soit trop large sur petit écran */
+        max-width: 90%;   /* Pour éviter qu’elle ne soit trop large sur un petit écran */
     }
 }
 
@@ -204,8 +205,7 @@ html{
     margin: 10px 50px;
 }
 
-
-    /* Engagements de la gallerie */
+/* Engagements de la galerie */
 .presentation_engagements{
     padding: 2% 10%;
     justify-content: space-around;
@@ -291,13 +291,13 @@ html{
     }
 }
 
-/* Section galerie */
+/* Section "Galerie" */
     /* Présentation des artistes */
 .titre_artiste{
     text-align: center;
 }
 
-            /* Carousel */
+/* Carousel */
 .nom_artiste{
     font-family: "Pirata One";
     font-size: 25px;
@@ -327,7 +327,7 @@ html{
     transition: transform 0.5s ease;
 }
 
-        /* 3 images visibles */
+/* 3 images visibles */
 .item{
     display: flex;
     flex-direction: column;
@@ -344,7 +344,7 @@ html{
     object-fit: cover;
 }
 
-                /* Positions du carousel */
+/* Positions du carousel */
 #pos1:checked ~ .viewport .track{
     transform: translateX(0%);
 }
@@ -401,7 +401,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     cursor: pointer;
 }
 
-                    /* Flèche de gauche */
+/* Flèche de gauche */
 .arrow.prev:before{
     content: "‹";
     position: absolute;
@@ -412,7 +412,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     color: #dd2b03;
 }
 
-                    /* Flèche de droite */
+/* Flèche de droite */
 .arrow.next::before{
     content: "›";
     position: absolute;
@@ -428,13 +428,13 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 
 .arrow { display: none; }
 
-                /* Positions du carousel */
+/* Positions du carousel */
 #pos1:checked ~ .arrows .b2 { display: block; } /* → pos2 */
 #pos2:checked ~ .arrows .a1 { display: block; } /* ← pos1 */
 #pos2:checked ~ .arrows .b3 { display: block; } /* → pos3 */
 #pos3:checked ~ .arrows .a2 { display: block; } /* ← pos2 */
 
-    /* Présentation des oeuvres */
+/* Présentation des oeuvres */
 .titre_oeuvres{
     text-align: center;
 }
@@ -471,7 +471,6 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     }
 }
 
-
 .paysage{
     border-radius: 30px;
     max-width: 100%;
@@ -489,20 +488,20 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 }
 
 
-/* Section contact */
+/* Section "Contacts" */
 #contacts{
     display: flex;
     justify-content: space-between;
 }
 
-        /* Coordonées de la galerie */
+/* Coordonnées de la galerie */
 .info{
     max-width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-        /* Réseaux sociaux de la galerie */
+/* Réseaux sociaux de la galerie */
 .rs{
     display: inline-block;
     margin-top: 2%;
@@ -517,7 +516,7 @@ input#pos3:checked ~ .controls label[for="pos3"]{
     border: #f6cacc 1px solid;
 }
 
-        /* Formulaire de contacts */
+/* Formulaire de contact */
 input[type=text]{
     width: 100%;
     padding: 12px;
@@ -622,4 +621,3 @@ input[type=text]{
   html, body {
     overflow-x: hidden;
 }
-
