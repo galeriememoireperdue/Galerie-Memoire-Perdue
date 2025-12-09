@@ -436,6 +436,12 @@ input#pos3:checked ~ .controls label[for="pos3"]{
 #pos2:checked ~ .arrows .b3 { display: block; } /* → pos3 */
 #pos3:checked ~ .arrows .a2 { display: block; } /* ← pos2 */
 
+.artistes_visionnaires{
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
 /* Présentation des oeuvres */
 .titre_oeuvres{
     text-align: center;
